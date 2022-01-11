@@ -93,3 +93,14 @@ public class FireCtrl : MonoBehaviour
     Quaternion rot = Quaternion.LookRotation(벡터)
     Quaternion rot1 = Quaternion.Euler(30, 45, 100)
 */
+
+/*
+    Animation Type
+
+    1. Legacy  : 가볍다. , 코드기반으로 컨트롤
+    2. Mecanim : Node Visual Editor, 복잡도가 증가하는 단점
+        - Generic : Retargetting X
+        - Humanoid : 2족 보행하는 모델에 적용, 필수본(Born) 15개를 충족, Retargetting(모션캡쳐 애니메이션을 사용)
+
+
+*/
