@@ -10,6 +10,8 @@ public class FireCtrl : MonoBehaviour
     public GameObject bulletPrefab; // Bullet 프리팹을 저장할 변수
     public AudioClip fireSfx; // 총 발사 사운드 파일을 저장할 변수
 
+    public MeshRenderer muzzleFlash;
+
     private AudioSource audio;
 
     void Start()
