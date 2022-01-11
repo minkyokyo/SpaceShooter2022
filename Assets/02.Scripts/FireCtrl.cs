@@ -10,6 +10,7 @@ public class FireCtrl : MonoBehaviour
     public GameObject bulletPrefab; // Bullet 프리팹을 저장할 변수
     public AudioClip fireSfx; // 총 발사 사운드 파일을 저장할 변수
 
+    [HideInInspector]
     public MeshRenderer muzzleFlash;
 
     private AudioSource audio;
@@ -18,8 +19,7 @@ public class FireCtrl : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
         muzzleFlash = firePos.Find("MuzzleFlash").GetComponent<MeshRenderer>();
-        // GameObject.Find("MuzzleFlash")
-        // Transform.Find()
+        muzzleFlash.enabled = false;
     }
 
     void Update()
