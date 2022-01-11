@@ -37,9 +37,9 @@ public class RemoveBullet : MonoBehaviour
     IsTrigger 언체크
 
 
-    OnTriggerEnter()
-    OnTriggerStay()
-    OnTriggerExit()
+    OnTriggerEnter()    : 1
+    OnTriggerStay()     : n
+    OnTriggerExit()     : 1
     IsTrigger 체크
 
     충돌콜백함수 발생조건
