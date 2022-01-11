@@ -18,6 +18,8 @@ public class FireCtrl : MonoBehaviour
     {
         audio = GetComponent<AudioSource>();
         muzzleFlash = firePos.Find("MuzzleFlash").GetComponent<MeshRenderer>();
+        // GameObject.Find("MuzzleFlash")
+        // Transform.Find()
     }
 
     void Update()
