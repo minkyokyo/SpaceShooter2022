@@ -25,7 +25,7 @@ public class MonsterCtrl : MonoBehaviour
         // 주인공과 몬스터간의 거리를 계산
         float distance = Vector3.Distance(playerTr.position, transform.position);
 
-        if (distance >= traceDist)
+        if (distance <= traceDist)
         {
             agent.isStopped = false; //이동가능
             anim.SetBool("IsTrace", true);
