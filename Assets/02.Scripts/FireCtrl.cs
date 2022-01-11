@@ -21,8 +21,15 @@ public class FireCtrl : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // 총알을 생성
-            Instantiate(bulletPrefab, firePos.position, firePos.rotation);
+            Fire();
         }
+    }
+
+    void Fire()
+    {
+        // 총알을 생성
+        Instantiate(bulletPrefab, firePos.position, firePos.rotation);
+        // 총소리를 발생
+        audio.PlayOneShot(fireSfx, 0.8f);
     }
 }
