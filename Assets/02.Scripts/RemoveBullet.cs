@@ -47,6 +47,13 @@ public class RemoveBullet : MonoBehaviour
     2) 이동하는 객체에는 Rigidbody Component
 */
 
+/*
+
+    AudioListener : 소리를 듣는 역할, 씬에 유일하게 - 1개 존재
+
+    AudioSource   : 소리를 발생시키는 역할 - n개 존재
+
+*/
 
 
 
