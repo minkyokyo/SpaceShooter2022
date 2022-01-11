@@ -6,6 +6,7 @@ public class FireCtrl : MonoBehaviour
 {
     public Transform firePos; // 총알을 생성할 위치
     public GameObject bulletPrefab; // Bullet 프리팹을 저장할 변수
+    public AudioClip fireSfx; // 총 발사 사운드 파일을 저장할 변수
 
     void Update()
     {
