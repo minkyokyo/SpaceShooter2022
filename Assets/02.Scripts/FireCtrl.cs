@@ -63,7 +63,7 @@ public class FireCtrl : MonoBehaviour
 
         // 텍스처의 크기를 변경
         float scale = Random.Range(1.0f, 3.0f);
-        muzzleFlash.material.mainTextureScale = Vector3.one * scale; // new Vector3(scale, scale, scale);
+        muzzleFlash.transform.localScale = Vector3.one * scale; // new Vector3(scale, scale, scale);
 
         // MuzzleFlash 활성화
         muzzleFlash.enabled = true;
