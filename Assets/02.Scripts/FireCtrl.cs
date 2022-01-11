@@ -37,15 +37,18 @@ public class FireCtrl : MonoBehaviour
         // 총소리를 발생
         audio.PlayOneShot(fireSfx, 0.8f);
         // 총구 화염 효과
-        ShowMuzzleFlash();
+        StartCoroutine(ShowMuzzleFlash());
     }
 
-    void ShowMuzzleFlash()
+    // 코루틴 Co-routine
+    IEnumerator ShowMuzzleFlash()
     {
         // MuzzleFlash 활성화
         muzzleFlash.enabled = true;
 
         // Waiting...
+        // yield return [~까지]
+        yield return new WaitForSeconds(0.2f);
 
         // MuzzleFlash 비활성화
         muzzleFlash.enabled = false;
