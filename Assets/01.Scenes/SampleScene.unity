@@ -1926,6 +1926,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   agent: {fileID: 0}
   playerTr: {fileID: 0}
+  traceDist: 10
 --- !u!1 &1820463439
 GameObject:
   m_ObjectHideFlags: 0
