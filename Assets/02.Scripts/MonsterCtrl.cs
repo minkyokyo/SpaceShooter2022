@@ -21,6 +21,7 @@ public class MonsterCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        anim.SetBool("IsTrace", true);
         agent.SetDestination(playerTr.position);
     }
 }
