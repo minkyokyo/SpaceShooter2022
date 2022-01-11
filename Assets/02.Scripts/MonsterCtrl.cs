@@ -9,6 +9,7 @@ public class MonsterCtrl : MonoBehaviour
     public NavMeshAgent agent;
 
     public Transform playerTr;
+    public float traceDist = 10.0f;
 
     void Start()
     {
@@ -21,7 +22,19 @@ public class MonsterCtrl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        anim.SetBool("IsTrace", true);
-        agent.SetDestination(playerTr.position);
+        // 주인공과 몬스터간의 거리를 계산
+        float distance = Vector3.Distance(playerTr.position, transform.position);
+
+        if (distance >= traceDist)
+        {
+            agent.isStopped = false; //이동가능
+            anim.SetBool("IsTrace", true);
+            agent.SetDestination(playerTr.position);
+        }
+        else
+        {
+            anim.SetBool("IsTrace", false);
+            agent.isStopped = true; //정지
+        }
     }
 }
